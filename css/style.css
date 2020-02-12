@@ -1,0 +1,522 @@
+body {
+    margin: 0px;
+    padding: 0px;
+	font-size:17px;
+}
+
+a {
+cursor:pointer;
+}
+
+#usermsg {
+    width:80%;
+    border:1px solid #000;
+}
+
+#chatbox {
+    text-align:left;
+    background:#fff;
+    height:100%;
+    width:100%;
+    overflow:auto;
+}
+
+#formsubm{
+	float:left;
+	width:90%;
+	
+}
+
+.msgln {
+    margin:0 0 2px 0;
+}
+
+.msglnm {
+    margin:0 0 2px 0;
+    background-color: #cccccc;
+}
+
+.msglnto {
+    margin:0 0 2px 0;
+    background: #ffa500;
+}
+
+.msglnpriv {
+    margin:0 0 2px 0;
+    background: #00ff33;
+}
+
+#chatTabs {	
+    height: 25px;
+    /*position: absolute;*/
+    padding-right: 40px;
+    border-bottom: 1px solid #BBB;
+    border-right: 1px solid #BBB;
+    z-index: 99999;
+    background: #fff;
+}
+
+#chatTabs ul{
+    margin: 0 auto;
+}
+#chatTabs ul li{
+    text-align: left;
+    float: left;
+    list-style: none;
+    /*padding: 3px 10px 3px 25px;*/
+    margin: 5px;
+	cursor:pointer;
+	font-size:12px;
+}
+
+.tabsCss{
+    width: 70%;
+	height: calc(100% - 24px);		
+	position: relative;
+	float: left;
+    overflow-y: scroll;
+}
+
+
+
+
+/*Ўмот*/
+
+.char-view-col .char-container {
+    border: 1px solid;
+    border-color: #FFFFFF #666666 #666666 #FFFFFF;
+    padding: 3px;
+    position: relative;
+    width: 245px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.char-items {
+    background-color: #DEDEDE;
+    height: 325px;
+    position: relative;
+    width: 205px;
+}
+
+.char-items-no-gems {
+    height: 325px;
+} 
+
+.char-items-full-size {
+    height: 290px;
+} 
+
+.char-items li {
+    overflow: hidden;
+    position: absolute;
+}
+
+.char-items img {
+    background-color: #DEDEDE;
+}
+
+.char-items img.active {
+    cursor: pointer;
+}
+
+img.broken {
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+.char-items .armor,
+.char-items .avatar,
+.char-items .belt,
+.char-items .bracelet,
+.char-items .earring,
+.char-items .helmet,
+.char-items .gloves,
+.char-items .necklace,
+.char-items .pants,
+.char-items .pocket,
+.char-items .ring,
+.char-items .rune,
+.char-items .shield,
+.char-items .shoes,
+.char-items .shoulder,
+.char-items .stone,
+.char-items .gem,
+.char-items .weapon {
+    background-image: none;
+}
+
+.char-items .armor,
+.char-items .armor img.item {
+    height: 105px;
+    width: 70px;
+}
+
+.char-items .armor {    
+    left: 0;
+    top: 115px;
+}
+
+.char-items .armor-empty {
+    background-image: url(http://img.carnage.ru/i/char_armor.gif);
+}
+
+.char-items .avatar,
+.char-items .avatar img {
+    height: 220px;
+    width: 105px;
+}
+
+.char-items .avatar {
+    left: 70px;
+    top: 35px;
+}
+
+.char-items-full-size .avatar,
+.char-items-full-size .avatar img {
+    height: 290px;
+    width: 245px;
+}
+
+.char-items-full-size .avatar {
+    left: 0;
+    top: 0;
+}
+
+.char-items .belt,
+.char-items .belt img.item {
+    height: 35px;
+    width: 70px;
+}
+
+.char-items .belt {
+    left: 175px;
+    top: 245px;
+}
+
+.char-items .belt-empty {
+    background-image: url(http://img.carnage.ru/i/char_belt.gif);
+}
+
+.char-items .bracelet,
+.char-items .bracelet img.item {
+    height: 35px;
+    width: 70px;
+}
+
+.char-items .bracelet {
+    left: 175px;
+    top: 105px;
+}
+
+.char-items .bracelet-empty {
+    background-image: url(http://img.carnage.ru/i/char_bracelet.gif);
+}
+
+.char-items .earring,
+.char-items .earring img.item {
+    height: 35px;
+    width: 70px;
+}
+
+.char-items .earring {
+    left: 175px;
+    top: 0;
+}
+
+.char-items .earring-empty {
+    background-image: url(http://img.carnage.ru/i/char_earring.gif);
+}
+
+.char-items .helmet,
+.char-items .helmet img.item {
+    height: 45px;
+    width: 70px;
+}
+
+.char-items .helmet {
+    left: 0;
+    top: 0;
+}
+
+.char-items .helmet-empty {
+    background-image: url(http://img.carnage.ru/i/char_helmet.gif);
+}
+
+.char-items .gloves,
+.char-items .gloves img.item {
+    height: 35px;
+    width: 70px;
+}
+
+.char-items .gloves {
+    left: 175px;
+    top: 140px;
+}
+
+.char-items .gloves-empty {
+    background-image: url(http://img.carnage.ru/i/char_gloves.gif);
+}
+
+.char-items .necklace,
+.char-items .necklace img.item {
+    height: 35px;
+    width: 70px;
+}
+
+.char-items .necklace {
+    left: 175px;
+    top: 35px;
+}
+
+.char-items .necklace-empty {
+    background-image: url(http://img.carnage.ru/i/char_necklace.gif);
+}
+
+.char-items .pants,
+.char-items .pants img.item {
+    height: 105px;
+    width: 70px;
+}
+
+.char-items .pants {
+    left: 0;
+    top: 220px;
+}
+
+.char-items .pants-empty {
+    background-image: url(http://img.carnage.ru/i/char_pants.gif);
+}
+
+.char-items .pocket,
+.char-items .pocket img.item,
+.char-items .ring,
+.char-items .ring img.item,
+.char-items .rune,
+.char-items .rune img.item,
+.char-items .stone,
+.char-items .stone img.item,
+.char-items .gem,
+.char-items .gem img.item {
+    height: 35px;
+    width: 35px;
+}
+
+.char-items .pocket-empty {
+    background-image: url(http://img.carnage.ru/i/char_pocket.gif);
+}
+
+.char-items .pocket-1,
+.char-items .slot-50 {
+    left: 175px;
+    top: 210px;
+}
+
+.char-items .pocket-2,
+.char-items .slot-51 {
+    left: 210px;
+    top: 210px;
+}
+
+.char-items .ring-empty {
+    background-image: url(http://img.carnage.ru/i/char_ring.gif);
+}
+
+.char-items .ring-1,
+.char-items .slot-10 {
+    left: 70px;
+    top: 290px;
+}
+
+.char-items .ring-2,
+.char-items .slot-11 {
+    left: 105px;
+    top: 290px;
+}
+
+.char-items .ring-3,
+.char-items .slot-12 {
+    left: 140px;
+    top: 290px;
+}
+
+.char-items .rune-empty {
+    background-image: url(http://img.carnage.ru/i/char_rune.gif);
+}
+
+.char-items .rune-1,
+.char-items .slot-40 {
+    left: 70px;
+    top: 0;
+}
+
+.char-items .rune-2,
+.char-items .slot-41 {
+    left: 105px;
+    top: 0;
+}
+
+.char-items .rune-3,
+.char-items .slot-42 {
+    left: 140px;
+    top: 0;
+}
+
+.char-items .rune-4,
+.char-items .slot-43 {
+    left: 70px;
+    top: 255px;
+}
+
+.char-items .rune-5,
+.char-items .slot-44 {
+    left: 105px;
+    top: 255px;
+}
+
+.char-items .rune-6,
+.char-items .slot-45 {
+    left: 140px;
+    top: 255px;
+}
+
+.char-items .shield,
+.char-items .shield img.item {
+    height: 70px;
+    width: 70px;
+}
+
+.char-items .shield {
+    left: 175px;
+    top: 175px;
+}
+
+.char-items .shield-empty {
+    background-image: url(http://img.carnage.ru/i/char_shield.gif);
+}
+
+.char-items .shoes,
+.char-items .shoes img.item {
+    height: 45px;
+    width: 70px;
+}
+
+.char-items .shoes {    
+    left: 175px;
+    top: 280px;
+}
+
+.char-items .shoes-empty {
+    background-image: url(http://img.carnage.ru/i/char_shoes.gif);
+}
+
+.char-items .shoulder,
+.char-items .shoulder img.item {
+    height: 35px;
+    width: 70px;
+}
+
+.char-items .shoulder {
+    left: 175px;
+    top: 70px;
+}
+
+.char-items .shoulder-empty {
+    background-image: url(http://img.carnage.ru/i/char_shoulder.gif);
+}
+
+.char-items .stone,
+.char-items .gem {
+    top: 325px;
+}
+
+.char-items .stone-empty,
+.char-items .gem-empty {
+    background-image: url(http://img.carnage.ru/i/char_stone.gif);
+}
+
+.char-items .stone-1,
+.char-items .gem-1,
+.char-items .slot-20 {
+    left: 0;
+}
+
+.char-items .stone-2,
+.char-items .gem-2,
+.char-items .slot-21 {
+    left: 35px;
+}
+
+.char-items .stone-3,
+.char-items .gem-3,
+.char-items .slot-22 {
+    left: 70px;
+}
+
+.char-items .stone-4,
+.char-items .gem-4,
+.char-items .slot-23 {
+    left: 105px;
+}
+
+.char-items .stone-5,
+.char-items .gem-5,
+.char-items .slot-24 {
+    left: 140px;
+}
+
+.char-items .stone-6,
+.char-items .gem-6,
+.char-items .slot-25 {
+    left: 175px;
+}
+
+.char-items .stone-7,
+.char-items .gem-7,
+.char-items .slot-26 {
+    left: 210px;
+}
+
+.char-items .weapon,
+.char-items .weapon img.item {
+    height: 70px;
+    width: 70px;
+}
+
+.char-items .weapon {
+    height: 70px;
+    left: 0;
+    top: 45px;
+    width: 70px;
+}
+
+.char-items .weapon-empty {
+    background-image: url(http://img.carnage.ru/i/char_weapon.gif);
+}
+
+
+/*HP & MP*/
+.hp-pw {
+    background-image: url(http://img.carnage.ru/i/scale.gif);
+    height: 16px;
+    text-align: left;
+    width: 245px;
+}
+
+.hp-pw .hp,
+.hp-pw .pw {
+    height: 8px;
+    width: 0;
+}
+
+.hp-pw .hp {
+    background-image: url(http://img.carnage.ru/i/hp1.gif);
+}
+
+.hp-pw .pw {
+    background-image: url(http://img.carnage.ru/i/pw1.gif);
+}
+
+#floatingmes {position:absolute; z-index:999; top:0; left:0; width:auto; background:#FFF; opacity:0.85; border:1px solid #000;display:none;padding:10px;}
